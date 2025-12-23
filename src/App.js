@@ -6,6 +6,7 @@ import GuidePage from "./pages/GuidePage"
 import DetailPage from "./pages/DetailPage" 
 import CartPage from "./pages/CartPage"
 import './assets/scss/global.scss'
+
 const App = () => {
   return (        
     <BrowserRouter>
