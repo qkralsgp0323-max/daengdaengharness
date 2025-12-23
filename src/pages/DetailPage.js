@@ -1,10 +1,10 @@
 import Info from "../components/detail/Info"
-import Contents from "../components/detail/Contents"
+import Review from "../components/detail/Review"
 const DetailPage = () => {
     return (
         <div id="detail-page">
             <Info />
-            <Contents />
+            <Review />
         </div>
     )
 }

@@ -7,10 +7,10 @@ const MainPage = () => {
     return (
         <div id="main-page">
             <BannerSection />
-            <BestProductsSection />
+            {/* <BestProductsSection />
             <LifestyleVideoSection />
             <PromotionSection/>
-            <ReviewSection />
+            <ReviewSection /> */}
         </div>
     )
 }

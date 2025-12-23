@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#sec-banner{
+    .bnr-wrap {
+        width: 100%;
+        height: 760px;
+        // overflow: hidden;
+        .bnr-track{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            .bnr-sec01, .bnr-sec02, .bnr-sec03 {
+                flex: 0 0 100%;
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .bnr-sec03{
+                position: relative;
+                .bnr-btn {
+                    position: absolute;
+                    bottom: 12rem;
+                    left: 15rem;
+                    font-size: 30px;
+                    font-weight: 700;
+                    padding: 0.5rem 1.5rem;
+                    border-radius: 5rem;
+                    background-color: #5594BD;
+                    color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                    background-color: #0F4E77;
+                    transition: 0.3s;
+                }
+                }
+            }
+        }
+    }
+}
+
+// #sec-banner {
+//     .bnr-wrap {
+//         display: block;
+//         width: 100%;
+//         height: 70vh;
+//         overflow: hidden;
+
+//         .track {
+//             /* ✅ (추가) 트랙: 슬라이드 4장을 가로로 한 줄 배치 + 이동 애니메이션 */
+//             width: 100%;
+//             height: 100%;
+//             display: flex;
+//             transition: transform 0.6s ease;
+//             will-change: transform;
+
+//             /* ✅ (추가) 복제→진짜 1번으로 스냅할 때만 애니메이션 제거 */
+//             &.is-no-ani {
+//                 transition: none;
+//             }
+
+//             .bnr-btn {
+//                 position: absolute;
+//                 bottom: 12rem;
+//                 left: 15rem;
+//                 color: white;
+//                 font-weight: 800;
+//                 font-size: 30px;
+//                 padding: 0.5rem 1.5rem;
+//                 background-color: #5594BD;
+//                 border-radius: 5rem;
+//                 cursor: pointer;
+
+//                 &:hover {
+//                     background-color: #0F4E77;
+//                     transition: 0.3s;
+//                 }
+
+//             }
+
+//             img {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//             }
+//         }
+//     }
+// }
