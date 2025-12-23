@@ -1,0 +1,43 @@
+#cart-page{
+  padding: 0 10rem;
+
+  .cart-h1{
+    text-align: center;
+    // padding: 5rem 0;
+    font-size: 64px;
+    font-weight: 900;
+    margin: none;
+    color: #0F4E77;
+  }
+
+  .cart-top{
+    //고정되어져야함
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .user-info{ 
+      font-size: 32px;
+    }
+    .right{
+      font-size: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      button{
+        font-size: 32px;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        background-color: #EBDDC5;
+        &:hover{
+          background-color: #C7B493;
+        }
+      }
+    }
+  }
+
+
+}
