@@ -6,6 +6,7 @@ import './CategoryPage.scss';
 const CategoryPage = () => {
     const [CardList,setCardList] = useState([]);
     const [bestList,setBestList] = useState([]);
+    const [soldOut,setSoldOut] = useState([])
 //best가 true인 애들만 보이게
     useEffect(()=>{
         const items = Products.Product.filter((item)=>{
@@ -60,6 +61,9 @@ const CategoryPage = () => {
                     })
                 }
                 </div>
+        <div className="info-text">
+            <p>강아지 별로 개인차가 있을수 있습니다</p>
+        </div>
         </div>
         </div>
 

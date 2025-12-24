@@ -77,6 +77,7 @@
       align-items: center;
       flex-wrap: wrap;
       justify-content: center;
+      margin-top: 3rem;
       .category-prodtag {
         cursor: pointer;
         transition: 0.5s;
@@ -98,15 +99,24 @@
         .card-bottom {
           padding: 0.7rem;
           p {
+            @include font-s-3 ;
             margin: 0;
             text-align: left;
             font-size: 12px;
+            margin-top: 0.5rem;
+            
           }
         }
-      &:nth-of-type(1){
-        margin-top: 1rem;
+      }
+    }
+    .info-text{
+      p{
+      text-align: center;
+      background-color: #fff;
+      font-size: 24px;
+      margin: 1.5rem;
+      margin-top: 2rem;
       }
     }
   }
-}
 }

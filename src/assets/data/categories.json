@@ -5,22 +5,22 @@
     {
       "id":1,
       "title":"의류형",
-      "img":""
+      "img":"/images/C-harness/Ctype3-1.png"
     },
     {
       "id":2,
       "title":"기본형",
-      "img":""
+      "img":"/images/Harness/Htype3-1.png"
     },
     {
     "id":3,
     "title":"목편한형",
-    "img":""
+    "img":"/images/Harness/Ytype2-1.png"
     },
     {
     "id":3,
     "title":"대형견추천용",
-    "img":""
+    "img":"/images/Harness/Ytype1-1.png"
     }
   ]
 }

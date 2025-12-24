@@ -1,8 +1,8 @@
 {
-  "size": ["s", "m", "l"],
-  "color": ["black", "yellow", "pink"],
-  "Product": [
-    {
+"size": ["s", "m", "l"],
+"color": ["black", "yellow", "pink"],
+"Product": [
+{
       "id": 1,
       "type": "H",
       "best": true,
@@ -12,8 +12,8 @@
       "origin_price": 18000,
       "sale_perc": 10,
       "like": true
-    },
-    {
+},
+{
       "id": 2,
       "type": "H",
       "best": false,
@@ -22,9 +22,9 @@
       "prod_name": "시티워크 소프트 H 하네스",
       "origin_price": 22000,
       "sale_perc": 15,
-      "like": false
-    },
-    {
+      "like": false    
+},
+{
       "id": 3,
       "type": "H",
       "best": false,
@@ -34,8 +34,8 @@
       "origin_price": 27000,
       "sale_perc": 20,
       "like": true
-    },
-    {
+},
+{
       "id": 4,
       "type": "H",
       "best": true,
@@ -45,8 +45,8 @@
       "origin_price": 16000,
       "sale_perc": 5,
       "like": true
-    },
-    {
+},
+{
       "id": 5,
       "type": "H",
       "best": false,
@@ -56,8 +56,8 @@
       "origin_price": 31000,
       "sale_perc": 10,
       "like": false
-    },
-    {
+},
+{
       "id": 6,
       "type": "H",
       "best": true,
@@ -67,8 +67,8 @@
       "origin_price": 19000,
       "sale_perc": 10,
       "like": false
-    },
-    {
+},
+{
       "id": 7,
       "type": "H",
       "best": false,
@@ -78,8 +78,8 @@
       "origin_price": 25000,
       "sale_perc": 15,
       "like": false
-    },
-    {
+},
+{
       "id": 8,
       "type": "H",
       "best": false,
@@ -89,8 +89,8 @@
       "origin_price": 34000,
       "sale_perc": 20,
       "like": false
-    },
-    {
+},
+{
       "id": 9,
       "type": "H",
       "best": false,
@@ -100,8 +100,8 @@
       "origin_price": 42000,
       "sale_perc": 25,
       "like": false
-    },
-    {
+},
+{
       "id": 10,
       "type": "H",
       "best": false,
@@ -111,8 +111,8 @@
       "origin_price": 15000,
       "sale_perc": 5,
       "like": false
-    },
-    {
+},
+{
       "id": 11,
       "type": "Y",
       "best": true,
@@ -122,8 +122,8 @@
       "origin_price": 23000,
       "sale_perc": 10,
       "like": true
-    },
-    {
+},
+{
       "id": 12,
       "type": "Y",
       "best": false,
@@ -133,8 +133,8 @@
       "origin_price": 28000,
       "sale_perc": 15,
       "like": false
-    },
-    {
+},
+{
       "id": 13,
       "type": "Y",
       "best": false,
@@ -144,8 +144,8 @@
       "origin_price": 19500,
       "sale_perc": 10,
       "like": false
-    },
-    {
+},
+{
       "id": 14,
       "type": "Y",
       "best": false,
@@ -155,8 +155,8 @@
       "origin_price": 24000,
       "sale_perc": 10,
       "like": true
-    },
-    {
+},
+{
       "id": 15,
       "type": "Y",
       "best": false,
@@ -166,8 +166,8 @@
       "origin_price": 31000,
       "sale_perc": 15,
       "like": false
-    },
-    {
+},
+{
       "id": 16,
       "type": "Y",
       "best": false,
@@ -177,8 +177,8 @@
       "origin_price": 19000,
       "sale_perc": 5,
       "like": false
-    },
-    {
+},
+{
       "id": 17,
       "type": "Y",
       "best": true,
@@ -188,8 +188,8 @@
       "origin_price": 35000,
       "sale_perc": 20,
       "like": true
-    },
-    {
+},
+{
       "id": 18,
       "type": "Y",
       "best": true,
@@ -199,8 +199,8 @@
       "origin_price": 42000,
       "sale_perc": 25,
       "like": true
-    },
-    {
+},
+{
       "id": 19,
       "type": "Y",
       "best": false,
@@ -210,8 +210,8 @@
       "origin_price": 17000,
       "sale_perc": 10,
       "like": false
-    },
-    {
+},
+{
       "id": 20,
       "type": "Y",
       "best": false,
@@ -221,8 +221,8 @@
       "origin_price": 29000,
       "sale_perc": 15,
       "like": false
-    },
-    {
+},
+{
       "id": 21,
       "type": "L",
       "best": true,
@@ -232,8 +232,8 @@
       "origin_price": 26000,
       "sale_perc": 10,
       "like": true
-    },
-    {
+},
+{
       "id": 22,
       "type": "L",
       "best": false,
@@ -243,8 +243,8 @@
       "origin_price": 37000,
       "sale_perc": 15,
       "like": false
-    },
-    {
+},
+{
       "id": 23,
       "type": "L",
       "best": false,
@@ -254,8 +254,8 @@
       "origin_price": 23000,
       "sale_perc": 10,
       "like": true
-    },
-    {
+},
+{
       "id": 24,
       "type": "L",
       "best": true,
@@ -265,8 +265,8 @@
       "origin_price": 34000,
       "sale_perc": 15,
       "like": true
-    },
-    {
+},
+{
       "id": 25,
       "type": "L",
       "best": false,
@@ -276,8 +276,8 @@
       "origin_price": 28000,
       "sale_perc": 10,
       "like": false
-    },
-    {
+},
+{
       "id": 26,
       "type": "L",
       "best": false,
@@ -287,8 +287,8 @@
       "origin_price": 39000,
       "sale_perc": 20,
       "like": false
-    },
-    {
+},
+{
       "id": 27,
       "type": "L",
       "best": false,
@@ -298,8 +298,8 @@
       "origin_price": 25000,
       "sale_perc": 10,
       "like": false
-    },
-    {
+},
+{
       "id": 28,
       "type": "L",
       "best": true,
@@ -309,8 +309,8 @@
       "origin_price": 18000,
       "sale_perc": 5,
       "like": true
-    },
-    {
+},
+{
       "id": 29,
       "type": "L",
       "best": false,
@@ -320,8 +320,8 @@
       "origin_price": 45000,
       "sale_perc": 30,
       "like": false
-    },
-    {
+},
+{
       "id": 30,
       "type": "L",
       "best": false,
@@ -331,8 +331,8 @@
       "origin_price": 32000,
       "sale_perc": 15,
       "like": false
-    },
-    {
+},
+{
       "id": 31,
       "type": "C",
       "best": true,
@@ -342,8 +342,8 @@
       "origin_price": 21000,
       "sale_perc": 10,
       "like": true
-    },
-    {
+},
+{
       "id": 32,
       "type": "C",
       "best": true,
@@ -353,8 +353,8 @@
       "origin_price": 23000,
       "sale_perc": 15,
       "like": true
-    },
-    {
+},
+{
       "id": 33,
       "type": "C",
       "best": false,
@@ -364,8 +364,8 @@
       "origin_price": 25000,
       "sale_perc": 20,
       "like": false
-    },
-    {
+},
+{
       "id": 34,
       "type": "C",
       "best": false,
@@ -375,8 +375,8 @@
       "origin_price": 22000,
       "sale_perc": 10,
       "like": false
-    },
-    {
+},
+{
       "id": 35,
       "type": "C",
       "best": false,
@@ -386,8 +386,8 @@
       "origin_price": 26000,
       "sale_perc": 25,
       "like": false
-    },
-    {
+},
+{
       "id": 36,
       "type": "C",
       "best": false,
@@ -397,8 +397,8 @@
       "origin_price": 24000,
       "sale_perc": 15,
       "like": true
-    },
-    {
+},
+{
       "id": 37,
       "type": "C",
       "best": false,
@@ -408,8 +408,8 @@
       "origin_price": 27000,
       "sale_perc": 20,
       "like": false
-    },
-    {
+},
+{
       "id": 38,
       "type": "C",
       "best": false,
@@ -419,8 +419,8 @@
       "origin_price": 28000,
       "sale_perc": 30,
       "like": false
-    },
-    {
+},
+{
       "id": 39,
       "type": "C",
       "best": false,
@@ -430,8 +430,8 @@
       "origin_price": 2000,
       "sale_perc": 35,
       "like": false
-    },
-    {
+},
+{
       "id": 40,
       "type": "C",
       "best": true,
@@ -441,6 +441,6 @@
       "origin_price": 30000,
       "sale_perc": 35,
       "like": true
-    }
-  ]
+}
+]
 }
