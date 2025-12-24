@@ -4,6 +4,7 @@ import bannerImg02 from "../../assets/images/banner/Banner02.png"
 import bannerImg03 from "../../assets/images/banner/Banner03.png"
 
 import { useErffct, useState, useRef } from "react"; //자동 슬라이드 클론용
+import "./BannerSection.scss";
 
 const BannerSection = () => {
     // 원본 3장 + 마지막에 1번을 복제(클론)해서 4장처럼 굴림

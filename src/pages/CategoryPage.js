@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react"
-import CategoryCard from "../components/main/CategoryCard"
+import ProductCard from "../components/category/ProductCard";
 import Products from "../assets/data/products.json"
 import './CategoryPage.scss';
 
@@ -22,34 +22,44 @@ const CategoryPage = () => {
             <div className="category-wrap">
                 <div className="category-top">
                     <div>
+                        <img/>
                     </div>
                 </div>
                 <div className="category-best">
                 <p>댕댕하네's <span>기본형</span> 베스트 상품</p>
+                <div className="cetegory-bestlist">
                 {
                     bestList.map((item)=>{
                         return(
-                            <CategoryCard 
-                                key={item.id}
-                                item={item}
-                            />
+                        <ProductCard key={item.id} 
+                        item={item} />
                         )
                     })
                 }
+                </div>
                 </div>
                 <div className="category-prod">
                 {
                     CardList.map((item)=>{
                         return(
-                            <CategoryCard 
-                                key={item.id}
-                                item={item}
+                            <ProductCard
+                            key={item.id}
+                            item={item}
+                            />
+                        )
+                    })
+                }
+                {
+                    CardList.map((item)=>{
+                        return(
+                            <ProductCard
+                            key={item.id}
+                            item={item}
                             />
                         )
                     })
                 }
                 </div>
-        CategoryPage
         </div>
         </div>
 

@@ -1,38 +1,65 @@
+@use '../assets/scss/variables' as * ;
+@use '../assets/scss/fonts' as * ;
+
+
 #category-page {
+  background-color: c;
   width: 100%;
+  background-color: var(--bg);
   .category-wrap {
     margin: auto;
-    height: 1080px;
     max-width: 1440px;
-    background-color: aqua;
     .category-top {
       div {
-        height: 760px;
+        height: 1120px;
         width: 100%;
-        background-color: pink;
+        background-image: url(../assets/images/Grid/Gridimage-H.png);
+        background-position: center;
+        background-size: cover;
       }
     }
     .category-best {
+      width: 100%;
       p {
+        @include font-title-2 ;
+        margin: 5rem 0;
         text-align: center;
         font-weight: bold;
         font-size: 64px;
         span {
-          color: gold;
+          color:var(--main-yellow);
         }
       }
-      .category-card {
+      .cetegory-bestlist{
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 2px dashed var(--light-yellow);
+      .category-prodtag {
+        cursor: pointer;
+        border-radius: 1rem;
         box-sizing: border-box;
-        width: 250px;
-        height: 360px;
-        background-color: yellow;
+        width: 350px;
+        height: 400px;
+        background-color: var(--soft-beige);
+        margin-bottom: 5rem;
+        box-shadow: 0px 4px 4px #464d40;
+        transition: 0.5s;
         .card-top {
           width: 100%;
           height: 80%;
           img {
             width: 100%;
             height: 100%;
+            border-radius: 1rem 1rem 0 0;
           }
+        }
+        &:hover{
+          transform: scale(1.1);
+        }
         }
         .card-bottom {
           padding: 0.7rem;
@@ -40,20 +67,30 @@
             margin: 0;
             text-align: left;
             font-size: 16px;
+            @include font-s-1 ;
           }
         }
       }
     }
     .category-prod {
-      .category-card {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      .category-prodtag {
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 1rem;
         box-sizing: border-box;
-        width: 200px;
-        height: 250px;
-        background-color: yellow;
+        margin: 1.5rem;
+        width: 300px;
+        height: 350px;
+        background-color: var(--soft-beige);
         .card-top {
           width: 100%;
           height: 80%;
           img {
+            border-radius: 1rem 1rem 0 0;
             width: 100%;
             height: 100%;
           }
@@ -66,6 +103,9 @@
             font-size: 12px;
           }
         }
+      &:nth-of-type(1){
+        margin-top: 1rem;
+      }
     }
   }
 }

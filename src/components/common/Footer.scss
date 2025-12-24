@@ -1,0 +1,44 @@
+@use '../../assets/scss/mixins' as *;
+@use '../../assets/scss/fonts' as *;
+
+
+.footer {
+    padding:0 10rem;
+    background-color: var(--green);
+    padding: 4rem 10rem;
+    @include flex-layout(row, space-between,  flex-end);
+        .footer-logo{
+            img{
+                width: 10rem;
+                height: 5rem;
+            }
+        }
+        /* 왼쪽 텍스트 */
+        .footer-ment {
+            p {
+                margin-bottom: 2rem;
+                font-size: 0.9rem;
+                color: var(--white);
+                @include font-s-1;
+            }
+            
+        }
+        /* 브랜드 아이콘 */
+        .footer-brands {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            img {
+                width: 3.5rem;
+                height: 3rem;
+            } 
+        }
+           /* 오른쪽 캐릭터 */
+            .footer-ex {
+                width: 40%;  
+                height: 18rem;
+            }
+    }
+
+
