@@ -1,0 +1,83 @@
+.option-wrap {
+  position: relative;
+  width: 100%;
+}
+
+/* 옵션 탭 (닫혀있는 상태) */
+.option-tab {
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* 값이 선택됐을 때 */
+.option-tab.isvalue {
+  border-color: #0f4e77;
+}
+
+/* 옵션 열렸을 때 */
+.option-tab.show {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* placeholder / 선택값 텍스트 */
+.option-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+
+/* 화살표 */
+.option {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.option.down {
+  transform: rotate(45deg);
+}
+
+.option.up {
+  transform: rotate(-135deg);
+}
+
+/* 옵션 리스트 */
+.option-list {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  background: #fff;
+  z-index: 10;
+}
+
+/* 옵션 아이템 */
+.option-item {
+  width: 100%;
+  padding: 14px 16px;
+  text-align: left;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* hover */
+.option-item:hover {
+  background: #e6f0f7;
+}
+
+/* 선택된 옵션 */
+.option-item.isActive {
+  background: #5c95bd;
+  color: #fff;
+}
