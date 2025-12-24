@@ -1,14 +1,34 @@
+import { useState } from "react";
+import likeOn from "../../assets/images/banner/Banner01.png";
+import likeOff from "../../assets/images/banner/Banner02.png";
 
-const CategoryCard = () => {
+
+const CategoryCard = ({item}) => {
+    const [isHover,setIsHover] =useState(false);
+    const getImagePath = (imgName)=>{
+        let hoverName = imgName;
+        if( isHover ){
+            hoverName = item.img2;
+        }
+        return require(`../../assets${hoverName}`);
+    }
     return (
         <div className="category-card">
-            <div className="img-card">
-            <img src={require(`../../assets/images/하네스/harness/Htype1-1.jpg.png`)}/>
+            <div className="card-top"
+            onMouseEnter={()=>{setIsHover(true)}}
+            onMouseLeave={()=>{setIsHover(false)}}>
+                <img src={getImagePath(item.img1)} />
+                <img className="Like"
+                src={item.like ? likeOn : likeOff}
+                alt="like"
+                />
+
+                
             </div>
-        <h2>기본형 하네스의 장점</h2>
-        <p>힘분산/안정감/편안한 착용감</p>
-        <h2>기본형 하네스의 단점</h2>
-        <p>움직임 제한/통제력약함/번거로움</p>
+            <div className="card-bottom">
+                <p>{item.prod_name}</p>
+                <p>￦{item.origin_price}</p>
+            </div>
         </div>
     )
 }
