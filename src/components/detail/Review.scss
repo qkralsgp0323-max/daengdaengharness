@@ -1,0 +1,60 @@
+@use "../../assets/scss/fonts" as *; 
+.detail-review {
+width: 100%;
+padding: 60px 0;
+}
+
+.detail-review-wrap {
+width: min(1100px, 92%);
+margin: 0 auto;
+}
+
+.detail-review-title {
+font-size: 28px;
+font-weight: 800;
+margin-bottom: 24px;
+}
+
+.detail-review-list {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.detail-review-item {
+border-top: 2px solid #6d5b4b;
+border-bottom: 2px solid #6d5b4b;
+padding: 20px 24px;
+background: #fff;
+}
+
+.detail-review-prod {
+font-size: 20px;
+font-weight: 800;
+margin-bottom: 8px;
+}
+
+.detail-review-star {
+font-size: 16px;
+font-weight: 700;
+margin-bottom: 12px;
+letter-spacing: 2px;
+}
+
+.detail-review-text {
+font-size: 15px;
+line-height: 1.7;
+margin-bottom: 12px;
+white-space: pre-line;
+}
+
+.detail-review-date {
+font-size: 14px;
+font-weight: 600;
+color: #444;
+}
+.detail-review-star .star {
+    color: #f5b301; // 별이 안 보이는 문제 방지
+    font-weight: 800;
+    letter-spacing: 2px;
+}
