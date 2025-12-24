@@ -23,10 +23,9 @@ const Option = ({label, options=[], value='',onChange,}) => {
     setShowOption((prev) => !prev);
   };
 
-  const handleSelect = (item) => {
-    onchange(item);
-    setShowOption(false)
-  }
+  const handleSelect = (item) => { 
+    if (typeof onChange === "function") onChange(item); 
+    setShowOption(false); };
 
   //옵션 탭 바깥 클릭 시 닫힘 동작
   useEffect(() => {
@@ -48,18 +47,18 @@ const Option = ({label, options=[], value='',onChange,}) => {
       <button 
       type="button" 
       // 클릭여부, 값 선택 여부로 className 변경 
-      className={`option ${showOption ? 'show' : ''} ${value ? 'isvalue' : ''}`}
+      className={`option-tab ${showOption ? 'show' : ''} ${value ? 'isvalue' : ''}`}
       onClick={handleToggle}>
         <span className="option-placeholder">
           {value ? value : placeholder}
         </span>
-        <span className={`option${showOption ? 'up' : 'down'}`}/>
+        <span className={`option ${showOption ? 'up' : 'down'}`}/>
       </button>
       {
         showOption && (
           <ul className="option-list">
             {
-              options.map((item) => {
+              options.map((item) => (
                 <li key={`${label}-${item}`}>
                   <button 
                     type="button"
@@ -68,7 +67,7 @@ const Option = ({label, options=[], value='',onChange,}) => {
                     {item}
                   </button>
                 </li>
-              })
+              ))
             }
           </ul>
         )
