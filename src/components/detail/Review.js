@@ -7,8 +7,8 @@ import "./Review.scss";
 const Review = () => {
     const { productId } = useParams();
 
-    const products = productsData.Product;
-    const reviews = reviewData.Review;
+    const products = productsData.Product || [];
+    const reviews = reviewData.Review || [];
 
     const product = useMemo(() => {
         const id = Number(productId);
@@ -16,16 +16,18 @@ const Review = () => {
     }, [productId, products]);
 
     const selectedReviews = useMemo(() => {
-        if (!reviews || reviews.length === 0) return [];
+        if (!product || reviews.length === 0) return [];
 
-        // ✅ JSON 키가 prod_name 이든 prodName 이든 둘 다 대응
+
         const sameProductReviews = reviews.filter((r) => {
-        const reviewName = r.prod_name || r.prodName || "";
+        const reviewName =
+            r.Prod_name || r.prod_name || r.prodName || r.productName || "";
         return reviewName === product.prod_name;
         });
 
         const source = sameProductReviews.length >= 3 ? sameProductReviews : reviews;
 
+        // 랜덤 3개
         const copied = [...source];
         const result = [];
 
@@ -38,13 +40,16 @@ const Review = () => {
         return result;
     }, [reviews, product]);
 
-    // ✅ 별점 출력 함수 (값이 없거나 문자열이어도 안전)
     const renderStars = (value) => {
+        if (!value) return "";
+
+        if (typeof value === "string" && value.includes("★")) return value;
+
         const n = Number(value) || 0;
-        return "★".repeat(n);
+        return "★".repeat(Math.max(0, Math.min(5, n)));
     };
 
-    if (selectedReviews.length === 0) return null;
+    if (!product || selectedReviews.length === 0) return null;
 
     return (
         <section className="detail-review">
@@ -52,15 +57,16 @@ const Review = () => {
             <h2 className="detail-review-title">Review</h2>
 
             <div className="detail-review-list">
-            {selectedReviews.map((r) => {
-                // ✅ 키 대응 (이 부분이 핵심!)
-                const name = r.prod_name || r.prodName || "(상품명 없음)";
+            {selectedReviews.map((r, idx) => {
+                const name =
+                r.Prod_name || r.prod_name || r.prodName || "(상품명 없음)";
+
                 const star = r.star ?? r.stars ?? r.rating ?? 0;
                 const text = r.text || r.content || "";
                 const date = r.date || r.buyDate || "";
 
                 return (
-                <div className="detail-review-item" key={r.id}>
+                <div className="detail-review-item" key={r.id ?? idx}>
                     <h3 className="detail-review-prod">상품명 : {name}</h3>
 
                     <p className="detail-review-star">
@@ -79,4 +85,3 @@ const Review = () => {
     };
 
 export default Review;
-

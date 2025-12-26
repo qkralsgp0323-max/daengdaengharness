@@ -65,7 +65,7 @@ const Info = () => {
         color: selectedColor,
         qty: qty,
         price: Number(product.origin_price) || 0, // “상품 단가” 저장 (CartPage에서 qty 곱해서 total 계산함)
-        img: product.img1 || "",              // 나중에 이미지 들어오면 표시됨
+        img: getImagePath(product.img1) || "",              // 나중에 이미지 들어오면 표시됨
     });
         // ✅ (지금은 Cart 담당자 방식에 맞춰 cartAdd 호출하는 형태로 갈 것)
         // cartAdd({...}) 넣고
